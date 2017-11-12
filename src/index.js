@@ -41,9 +41,9 @@ class TodoApp extends React.Component {
     let items = this.state.items;
     for(let item of items)
     {
-      if(item.id == itemId)
+      if(item.id === itemId)
       {
-        if(item.status == "completed")
+        if(item.status === "completed")
         {
           item.status = "incompleted";
         }else{

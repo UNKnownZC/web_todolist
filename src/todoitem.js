@@ -16,7 +16,7 @@ export default class TodoItem extends React.Component{
   		let stat = this.props.status;
   		let checked;
 
-  		if(stat == "completed"){
+  		if(stat === "completed"){
   			item = <del>{item}</del>;
   			checked = true;
   		}else{
