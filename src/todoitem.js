@@ -24,7 +24,7 @@ export default class TodoItem extends React.Component{
   		}
 
   		return (
-      	<li className="ItemDetail">
+      	<li>
       		<p id="text">
       			<b>ToDo:</b> {item}
       		</p>
