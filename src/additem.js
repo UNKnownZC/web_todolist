@@ -22,10 +22,10 @@ export default class AddItem extends React.Component {
       <div className="addItem">
         <form onSubmit={this.addTodoItem}>
           <p id="left"> 
-            <input id="itemTextBox" type="text" placeholder="Type New To-do Item here"></input>
+            <input id="itemTextBox" type="text" placeholder="Type New To-do Item Here"></input>
           </p>
           <p id="right">
-            <button id="addItemButton">Add</button>
+            <button id="addItemBtn">Add</button>
           </p>
         </form>
       </div>

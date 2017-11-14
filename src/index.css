@@ -42,20 +42,43 @@ p {
 
 #itemTextBox {
 	width: 400px;
+	font-size: 16px;
+	padding: 1px;
+}
+
+button {
+	font-size: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555555;
+    color: white;
 }
 
 .addItem {
 	overflow: hidden;
 }
 
+.deleteBtn {
+	font-size: 12px;
+}
+
+.deleteBtn:hover {
+    background-color: #555555;
+    color: white;
+}
+
 #left {
 	float: left;
-	padding-left: 25px;
+	padding-left: 50px;
 }
 
 #right {
 	float: right;
-	padding-right: 25px; 
+	padding-right: 50px; 
 }
 
 
