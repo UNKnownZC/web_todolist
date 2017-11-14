@@ -20,7 +20,7 @@ class TodoApp extends React.Component {
   render() {
     return (
       <div>
-        <h3>TODOLIST</h3>
+        <h3>TODOAPP</h3>
         <TodoList items={this.state.items} 
                   finishItem={this.handleFinishItem} 
                   deleteItem={this.handleDeleteItem}/>
