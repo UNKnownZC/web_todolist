@@ -11,7 +11,8 @@ class TodoApp extends React.Component {
                           {"id": "1", "item": "Graduate from University", status:"completed"},
                           {"id": "2", "item": "Create a react app", status:"completed"},
                           {"id": "3", "item": "Interview", status:"incompleted"},
-                          {"id": "4", "item": "More coding", status:"incompleted"}]};
+                          {"id": "4", "item": "Have breakfast", status:"completed"},
+                          {"id": "5", "item": "More coding", status:"incompleted"}]};
     this.handleAddTodoItem = this.handleAddTodoItem.bind(this);
     this.handleFinishItem = this.handleFinishItem.bind(this);
     this.handleDeleteItem = this.handleDeleteItem.bind(this);
