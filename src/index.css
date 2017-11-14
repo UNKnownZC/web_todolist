@@ -29,7 +29,7 @@ p {
 }
 
 .completedClass {
-	background: gray;
+	background: #E0E0E0;
 }
 
 #text {
@@ -41,7 +41,7 @@ p {
 }
 
 #itemTextBox {
-	width: 300px;
+	width: 400px;
 }
 
 .addItem {
