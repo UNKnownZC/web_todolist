@@ -14,6 +14,7 @@ export default class AddItem extends React.Component {
     }else{
       this.props.addTodoItem(item);
       item = "";
+      document.getElementById("itemTextBox").value="";
     }
   }
 
@@ -22,7 +23,9 @@ export default class AddItem extends React.Component {
       <div className="addItem">
         <form onSubmit={this.addTodoItem}>
           <p id="left"> 
-            <input id="itemTextBox" type="text" placeholder="Type New To-do Item Here"></input>
+            <input id="itemTextBox" 
+                    type="text" maxlength="40" 
+                    placeholder="Type New To-do Item Here" />
           </p>
           <p id="right">
             <button id="addItemBtn">Add</button>
