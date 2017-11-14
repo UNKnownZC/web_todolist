@@ -33,11 +33,11 @@ export default class TodoItem extends React.Component{
   	return (
     	<li className={liClass}>
         <p id="text">
-      		<b>ToDo:</b> {item}
+      		<b>ID:{id} ToDo:</b> {item}
     		</p>
-    		<p id="itemId">
+    		<p id="btnBox">
           <button className="deleteBtn" onClick={this.deleteItem}>Delete</button>
-      		<input type="checkbox" checked={checked} id={id} onChange={this.finishItem}/>
+      		<input type="checkbox" checked={checked} className="cBox" onChange={this.finishItem}/>
       	</p>
       </li>
     );

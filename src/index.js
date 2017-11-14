@@ -62,6 +62,11 @@ class TodoApp extends React.Component {
     let targetItem = items.find(function(item){return item.id === itemId});
     if(targetItem.status === "completed"){
       items = items.filter(function(item){return item !== targetItem});
+      for (let item of items){
+        if (item.id !== (items.indexOf(item)+1)){
+          item.id = (items.indexOf(item)+1);
+        }
+      }
     }else{
       alert("Incompleted Task cannot be deleted");
     }
