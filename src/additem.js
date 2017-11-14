@@ -3,7 +3,7 @@ import React from 'react';
 export default class AddItem extends React.Component {
   constructor(props) {
     super(props)
-    this.addTodoItem = this.addTodoItem.bind(this)
+    this.addTodoItem = this.addTodoItem.bind(this);
   }
 
   addTodoItem(e) {

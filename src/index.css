@@ -5,9 +5,9 @@ body {
 
 #root {
 	margin: auto;
-    width: 500px;
+    width: 600px;
     padding: 10px;
-    border: 5px solid gray;
+    border: 5px ridge gray;
     border-radius: 10px;
 }
 
@@ -26,6 +26,10 @@ li {
 }
 p {
 	display: inline-block;
+}
+
+.completedClass {
+	background: gray;
 }
 
 #text {

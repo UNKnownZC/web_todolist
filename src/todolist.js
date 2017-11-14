@@ -9,7 +9,8 @@ export default class TodoList extends React.Component{
                 key ={item.id}
                 item = {item.item}
                 status = {item.status}
-                finish = {this.props.finish}
+                finishItem = {this.props.finishItem}
+                deleteItem = {this.props.deleteItem}
                 />
     )
 

@@ -13,14 +13,17 @@ class TodoApp extends React.Component {
                           {"id": "3", "item": "Interview", status:"incompleted"},
                           {"id": "4", "item": "More coding", status:"incompleted"}]};
     this.handleAddTodoItem = this.handleAddTodoItem.bind(this);
-    this.handleFinish = this.handleFinish.bind(this);
+    this.handleFinishItem = this.handleFinishItem.bind(this);
+    this.handleDeleteItem = this.handleDeleteItem.bind(this);
   }
 
   render() {
     return (
       <div>
         <h3>TODOLIST</h3>
-        <TodoList items={this.state.items} finish={this.handleFinish} />
+        <TodoList items={this.state.items} 
+                  finishItem={this.handleFinishItem} 
+                  deleteItem={this.handleDeleteItem}/>
         <AddItem addTodoItem={this.handleAddTodoItem}/>
       </div>
     );
@@ -37,7 +40,7 @@ class TodoApp extends React.Component {
     this.setState({items});
   }
 
-  handleFinish(itemId){
+  handleFinishItem(itemId){
     let items = this.state.items;
     for(let item of items)
     {
@@ -50,6 +53,17 @@ class TodoApp extends React.Component {
           item.status = "completed";
         }
       }
+    }
+    this.setState({items});
+  }
+
+  handleDeleteItem(itemId){
+    let items = this.state.items;
+    let targetItem = items.find(function(item){return item.id === itemId});
+    if(targetItem.status === "completed"){
+      items = items.filter(function(item){return item !== targetItem});
+    }else{
+      alert("Incompleted Task cannot be deleted");
     }
     this.setState({items});
   }
